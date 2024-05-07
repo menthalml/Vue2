@@ -1,7 +1,7 @@
 import { initMixin } from "./init";
 
 function Vue(options) {
-  console.log('111');
+  console.log('111', options);
   // 初始化配置项
   this._init(options);
 }
