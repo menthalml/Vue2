@@ -20,7 +20,10 @@
         data() {
           console.log('data111', this);
           return {
-            msg: '111'
+            msg: {c: 111},
+            a: {b: 20, },
+            list: [{a: 1}],
+            c: [1,2,3]
           }
         },
         props: {
@@ -28,6 +31,7 @@
         watch: {}
     })
     console.log('vm', vm);
+    vm._data.list.push({b: 2});
   </script>
 </body>
 </html>
